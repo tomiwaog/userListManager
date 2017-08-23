@@ -1,0 +1,28 @@
+User List Manager allows you to import user lists in JSON format, CSV Format and XML Format.
+One can also export this this list in similar format and output it to a file.
+
+All files to be read are under data/ directory
+You can specify a different reading directory by changin parameter in Main()
+Some testing done to ensure file being read exist at location is a corresponding file type to method being invoked.
+E.g. Method reading CSV File will not permit a different extension passed in as parameter.
+
+File can be output to any extension type provided its set in the parameter.
+Files written are stored in project directory.
+
+Some Exception Caught
+
+Logic:
+CSV File, XML File and JSON File are imported seperated
+the 3 file types are combined into one array (including all Usertype objects
+Combined array is sorted using collection.sort()
+Sorted combined array is exported into XML, JSON and CSV Seperately.
+
+Some presentation error.
+JSON output format exactly as input format.
+
+--Improvement --
+Formatting could be improved
+More refactoring could be done, to reduce duplication.
+OOProgramming could be improved greatly.
+Documentation and Userguide could be made.
+Manally written sorting algorithm could be implemented to showcase optimization on runtime.
